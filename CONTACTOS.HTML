@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | Floristería Bolivia</title>
+
+<link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+<style>
+
+/* VARIABLES (ARREGLADO) */
+:root{
+--rosa:#e91e63;
+--oscuro:#2b2b2b;
+}
+
+/* FONDO GENERAL */
+body{
+background: linear-gradient(135deg, #fff0f5, #f8bbd0);
+font-family: Arial, sans-serif;
+padding-top:80px; /* PARA NAVBAR */
+}
+
+/* CONTENEDOR */
+.contacto-box{
+background:#ffffff;
+border-radius:20px;
+padding:40px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* TITULO */
+.titulo{
+color:#e91e63;
+font-weight:bold;
+}
+
+/* BOTONES REDES */
+.red-btn{
+display:block;
+width:100%;
+margin:10px 0;
+padding:12px;
+border-radius:30px;
+text-align:center;
+text-decoration:none;
+color:#fff;
+font-weight:bold;
+transition:0.3s;
+}
+
+/* COLORES REDES */
+.tiktok{ background:#000; }
+.facebook{ background:#1877f2; }
+.instagram{ background: linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7); }
+.whatsapp{ background:#25d366; }
+
+/* HOVER */
+.red-btn:hover{
+transform: scale(1.05);
+opacity:0.9;
+}
+
+/* ===== NAVBAR ===== */
+.navbar-custom{
+background: rgba(255,255,255,0.7);
+backdrop-filter: blur(10px);
+transition: 0.3s;
+padding: 12px 0;
+}
+
+.navbar-custom .nav-link{
+color: var(--oscuro);
+font-weight: 500;
+margin: 0 10px;
+position: relative;
+}
+
+.navbar-custom .nav-link::after{
+content:"";
+position:absolute;
+width:0%;
+height:2px;
+background: var(--rosa);
+left:0;
+bottom:0;
+transition:0.3s;
+}
+
+.navbar-custom .nav-link:hover{
+color: var(--rosa);
+}
+
+.navbar-custom .nav-link:hover::after{
+width:100%;
+}
+
+.logo-icon{
+font-size:22px;
+}
+
+/* BOTÓN */
+.btn-contacto{
+background: linear-gradient(45deg, var(--rosa), #ff80ab);
+color:#fff;
+border-radius:30px;
+padding:8px 20px;
+font-weight:600;
+border:none;
+}
+
+.btn-contacto:hover{
+background: linear-gradient(45deg, #d81b60, #f06292);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+<div class="container">
+
+<a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="index.html">
+<span class="logo-icon me-2">🌸</span>
+Flores Eternas
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto align-items-lg-center text-center">
+
+<li class="nav-item">
+<a class="nav-link active" href="PRINCIPAL.HTML">Inicio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="NOSOTROS.HTML">Nosotros</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="GALERIA.HTML">Galería</a>
+</li>
+
+<li class="nav-item ms-lg-3">
+<a class="btn btn-contacto" href="CONTACTOS.HTML">Contacto</a>
+</li>
+
+</ul>
+</div>
+
+</div>
+</nav>
+
+<!-- CONTENIDO -->
+<div class="container d-flex justify-content-center align-items-center vh-100">
+
+<div class="contacto-box text-center col-md-6">
+
+<h2 class="titulo mb-4">🌸 Contáctanos</h2>
+
+<p>Elige tu red favorita para comunicarte con nosotros</p>
+
+<!-- BOTONES -->
+<a href="https://wa.me/59173053670" class="red-btn whatsapp">WhatsApp</a>
+
+<a href="#" class="red-btn facebook">Facebook</a>
+
+<a href="" class="red-btn instagram">Instagram</a>
+
+<a href="https://www.tiktok.com/@emy_cosmetics_2026" target="_blank" class="red-btn tiktok">TikTok</a>
+
+</div>
+
+</div>
+
+<script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

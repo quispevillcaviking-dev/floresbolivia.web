@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosotros | Floristería Bolivia</title>
+
+<link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+<style>
+
+:root{
+--rosa:#e91e63;
+--oscuro:#2b2b2b;
+}
+
+body{
+background: linear-gradient(135deg, #fff0f5, #f8bbd0);
+font-family: Arial, sans-serif;
+padding-top:80px;
+}
+
+/* NAVBAR */
+.navbar-custom{
+background: rgba(255,255,255,0.7);
+backdrop-filter: blur(10px);
+padding: 12px 0;
+}
+
+.navbar-custom .nav-link{
+color: var(--oscuro);
+margin:0 10px;
+position: relative;
+}
+
+.navbar-custom .nav-link::after{
+content:"";
+position:absolute;
+width:0%;
+height:2px;
+background: var(--rosa);
+left:0;
+bottom:0;
+transition:0.3s;
+}
+
+.navbar-custom .nav-link:hover{
+color: var(--rosa);
+}
+
+.navbar-custom .nav-link:hover::after{
+width:100%;
+}
+
+.logo-icon{
+font-size:22px;
+}
+
+.btn-contacto{
+background: linear-gradient(45deg, var(--rosa), #ff80ab);
+color:#fff;
+border-radius:30px;
+padding:8px 20px;
+border:none;
+}
+
+/* NOSOTROS */
+.nosotros{
+padding:80px 0;
+}
+
+.card-nosotros{
+background:#fff;
+border-radius:25px;
+padding:50px;
+box-shadow:0 15px 40px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card-nosotros:hover{
+transform: translateY(-5px);
+}
+
+.titulo{
+color:#e91e63;
+font-weight:bold;
+font-size:32px;
+}
+
+.icono{
+font-size:45px;
+}
+
+/* IMAGEN */
+.img-nosotros{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom">
+<div class="container">
+
+<a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="index.html">
+<span class="logo-icon me-2">🌸</span>
+Flores Eternas
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto align-items-lg-center text-center">
+
+<li class="nav-item">
+<a class="nav-link" href="PRINCIPAL.HTML">Inicio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="NOSOTROS.HTML">Nosotros</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="GALERIA.HTML">Galería</a>
+</li>
+
+<li class="nav-item ms-lg-3">
+<a class="btn btn-contacto" href="CONTACTOS.HTML">Contacto</a>
+</li>
+
+</ul>
+</div>
+
+</div>
+</nav>
+
+<!-- NOSOTROS PRO -->
+<section class="nosotros">
+<div class="container">
+
+<div class="card-nosotros">
+
+<div class="row align-items-center g-5">
+
+<!-- TEXTO -->
+<div class="col-md-6">
+
+<h2 class="titulo mb-4">🌸 Sobre Nosotros</h2>
+
+<p class="mb-3">
+En <strong>Floristería Bolivia</strong> nos especializamos en crear
+<strong>arreglos de flores eternas</strong>, diseñados para conservar su belleza
+y transmitir emociones que perduran en el tiempo.
+</p>
+
+<p class="mb-3">
+Cada detalle es cuidadosamente elaborado, combinando elegancia,
+creatividad y calidad para ofrecer experiencias únicas.
+</p>
+
+<p class="mb-4">
+Más que flores, entregamos recuerdos que nunca se marchitan. ✨
+</p>
+
+<a href="CONTACTOS.HTML" class="btn btn-contacto">
+🌸 Contáctanos
+</a>
+
+</div>
+
+<!-- IMAGEN -->
+<div class="col-md-6 d-flex justify-content-center">
+
+<div class="contenedor-img shadow">
+<img src="FLORES/dddd.jpeg" class="img-nosotros" alt="Flores eternas">
+</div>
+
+</div>
+
+</div>
+
+<hr class="my-5">
+
+<!-- VALORES -->
+<div class="row text-center g-4">
+
+<div class="col-md-4">
+<div class="valor-box">
+<div class="icono mb-3">🌹</div>
+<h5 class="fw-bold">Durabilidad</h5>
+<p>Flores que mantienen su belleza por mucho tiempo.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="valor-box">
+<div class="icono mb-3">💖</div>
+<h5 class="fw-bold">Elegancia</h5>
+<p>Diseños exclusivos para momentos especiales.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="valor-box">
+<div class="icono mb-3">🎁</div>
+<h5 class="fw-bold">Detalles Únicos</h5>
+<p>Regalos que dejan huella y nunca se olvidan.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
